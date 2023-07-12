@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product_manager.css">
+    <title>prodect manager</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <h1>product manager</h1>
+        </div>
+        <div class="m">
+            <div class="d">
+                <div class="input">
+                    <input type="text" id="title" placeholder="product name">
+                    <div class="prix">
+                        <input onkeyup="gertotl()" type="number" id="prix" placeholder="price of buying">
+                        <input onkeyup="gertotl()" type="number" id="prix_s" placeholder="price of seling">
+                        <small id="total"></small>
+                    </div>
+                    <input type="number" id="count" placeholder="count">
+                    <input type="text" id="categorie" placeholder="category">
+                    <button id="submit">create</button>
+
+                </div>
+                <div class="outbut">
+
+                    <div class="search">
+                        <input type="text" onkeyup="searchd(this.value)" id="search" placeholder="search">
+                        <div class="btn">
+                            <button onclick=" getsearch(this.id)" id="stitre">search by titel</button>
+                            <button onclick=" getsearch(this.id)" id="scatecorie">search by titel</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="t">
+                <div id="dall">
+                    
+                </div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>TITLE</th>
+                        <th>BYING</th>
+                        <th>SELING</th>
+                        <th>PROFIT</th>
+                        <th>CATIGORIES</th>
+                        <th>UPDATE</th>
+                        <th>DELETE</th>
+                    </tr>
+                    <tbody id="table">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="PRODUCT_manager.js"></script>
+
+</body>
+
+</html>
